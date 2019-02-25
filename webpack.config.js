@@ -23,6 +23,14 @@ module.exports = {
       test: /\.jsx?$/,
       use: ['babel-loader'],
       include: path.join(__dirname, 'src')
-    }]
+    },
+    {
+      test: /\.css$/,
+      use: [
+
+          'css-loader',
+      ],
+    },
+  ]
   }
 };
